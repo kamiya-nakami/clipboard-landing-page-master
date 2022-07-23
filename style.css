@@ -212,6 +212,9 @@ footer {
     .icon {
         flex-direction: column;
     }
+    .icon section {
+        margin: 4rem 0;
+    }
     .Logo{
         flex-direction: column;
         align-items: center;        
