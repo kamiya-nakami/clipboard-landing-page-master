@@ -32,8 +32,9 @@ h1 {
 }
 
 .Download-top {
+    background: url(/images/bg-header-desktop.png) no-repeat;
    text-align: center;
-   margin: 4rem 0;
+   margin-bottom: 2rem;
 }
 .Download-top p {
     padding: 0 30%;
@@ -200,6 +201,10 @@ footer {
         display: grid;
         grid-template-rows: repeat(2,auto);
         gap: 1rem;
+    }
+    .Download-top {
+        background: url(/images/bg-header-mobile.png) no-repeat;
+        background-size: 100%;
     }
     .Download-top img {
         width: 5rem;
