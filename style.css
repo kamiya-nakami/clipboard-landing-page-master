@@ -1,0 +1,240 @@
+:root {
+    
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue:hsl(233, 100%, 69%);
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    color: var(--Grayish-Blue);
+    margin-top: 1rem;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+.container-grid {
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9,auto);
+}
+
+.Download-top {
+   text-align: center;
+   margin: 4rem 0;
+}
+.Download-top p {
+    padding: 0 30%;
+}
+
+.button-Download-top {
+    margin-top: 2rem;
+}
+:is(.button-Download-top, .button-Download-bottom) button {
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0 1rem;
+}
+
+.button-Download-iOS {
+    background-color: var(--Strong-Cyan);
+}
+.button-Download-iOS:hover {
+    box-shadow: -2px 22px 15px -4px hsl(171, 66%, 44%, 0.2);
+}
+.button-Download-Mac {
+    background-color: var(--Light-Blue);
+}
+
+.button-Download-Mac:hover {
+    box-shadow: -2px 22px 15px -4px hsl(233, 100%, 69%, 0.2);
+}
+.content-text1 {
+    text-align: center;
+}
+
+
+.content-text1 p {
+    padding: 0 18%;
+}
+
+.computer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 7rem;
+    margin: 3rem 3rem;
+}
+.computer img {
+    width: 100%;
+    height: auto;
+}
+
+.content-computer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+}
+
+.content-text2 {
+    text-align: center;
+}
+
+.content-text2 p {
+    padding: 0 28%;
+}
+.img-devices img{
+    margin-top: 5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.content-text3 {
+    text-align: center;
+    
+}
+.icon {
+    text-align: center;
+    margin: 5rem 0;
+    display: flex;
+}
+.icon img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+}
+.icon p {
+    padding: 0 20%;
+}
+
+.Logo {
+    display: flex;
+    justify-content: space-around;
+}
+.Logo img {
+    width: auto;
+    height: 100%;
+    margin: 0 1rem;
+}
+
+.Download-bottom {
+    text-align: center;
+    margin: 6rem 0;
+}
+
+.Download-bottom p {
+    padding: 0 27%;
+    margin: 3rem 0;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto;
+    padding: 2rem 4rem;
+    background-color: hsl(194deg 100% 97%); 
+    height: 7rem;
+    text-align: center;
+}
+.logo-footer img {
+    width: 3rem;
+    
+}
+.container-QA {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 1rem;
+   
+}
+
+.container-QA a {
+    text-decoration:none ;
+    color: var(--dark-grayish-blue);
+}
+.container-QA a:hover {
+    color: var(--Strong-Cyan);
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-f-i-t {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-f-i-t i{
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--Grayish-Blue);
+}
+.icon-f-i-t i:hover {
+    color: var(--Strong-Cyan);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 865px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    :is(.button-Download-top, .button-Download-bottom)  {
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        gap: 1rem;
+    }
+    .Download-top img {
+        width: 5rem;
+    }
+    .computer {
+        grid-template-columns: auto ;
+        grid-template-rows: repeat(2,auto);
+        text-align: center;
+    }
+    .icon {
+        flex-direction: column;
+    }
+    .Logo{
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .Logo img {
+        width: 10rem;
+        height: auto;
+        margin: 2rem 1rem;
+    }
+    footer {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3,auto);
+        height: 100%;
+    }
+    
+    .container-QA {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5,auto);
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+    .icon-f-i-t i{
+        color: var(--Dark-Grayish-Blue);
+    }
+}
